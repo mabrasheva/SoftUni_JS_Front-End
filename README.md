@@ -1,1 +1,1 @@
-# SoftUni_JS_Front-End
+## The repository stores JS exercises part of my education in Software University.
