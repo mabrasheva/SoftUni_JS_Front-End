@@ -2,8 +2,8 @@
 // `Name: {student name}, Age: {student age}, Grade: {student grade}`
 //  Note: The grade should be formatted to the second decimal point.
 
-function solve(studdentName, studentAge, studentGrade) {
-    console.log(`Name: ${studdentName}, Age: ${studentAge}, Grade: ${studentGrade.toFixed(2)}`);
+function solve(studentName, studentAge, studentGrade) {
+    console.log(`Name: ${studentName}, Age: ${studentAge}, Grade: ${studentGrade.toFixed(2)}`);
 }
 
 solve('John', 15, 5.54678);
