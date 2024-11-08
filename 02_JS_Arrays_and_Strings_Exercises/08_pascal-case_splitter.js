@@ -16,3 +16,4 @@ function pascalCaseSplit(initialString) {
 }
 
 pascalCaseSplit('SplitMeIfYouCanHaHaYouCantOrYouCan'); // Split, Me, If, You, Can, Ha, Ha, You, Cant, Or, You, Can
+pascalCaseSplit('SplitMeIfYouCan12AA'); // Split, Me, If, You, Can, Ha, Ha, You, Cant, Or, You, Can

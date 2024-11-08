@@ -7,4 +7,3 @@ function substring(text, startIndex, count) {
 
 substring('ASentence', 1, 8);   //	Sentence
 substring('SkipWord', 4, 7);    //	Word
-

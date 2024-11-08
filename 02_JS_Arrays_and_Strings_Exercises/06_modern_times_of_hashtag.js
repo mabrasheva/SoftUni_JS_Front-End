@@ -22,4 +22,3 @@ hashtagWords('Nowadays everyone uses # to tag a #special word in #socialMedia');
 // hashtagWords('Nowadays everyone uses # to tag a #special word in #socialMedia1'); //	special socialMedia
 // hashtagWords('Nowadays everyone uses # to tag a #special word in #socialMedia$%D.'); //	special socialMedia
 // hashtagWords('The symbol # is known #variously in English-speaking #regions as the #number sign'); //variously  regions number
-

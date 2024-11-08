@@ -36,4 +36,3 @@ solve('python', 'JavaScript is the best programming language'); // python not fo
 solve2('javascript', 'JavaScriptqw is the best programming language'); // javascript
 solve2('Javascript', 'JavaScript is the best programming language'); // javascript
 solve2('python', 'JavaScript is the best programming language'); // python not found!
-

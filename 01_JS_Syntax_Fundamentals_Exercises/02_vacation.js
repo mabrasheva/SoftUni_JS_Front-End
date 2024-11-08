@@ -67,4 +67,3 @@ function calculatePrice(peopleNumber, groupType, weekDay) {
 
 calculatePrice(30, "Students", "Sunday") //Total price: 266.73
 calculatePrice(40, "Regular", "Saturday") //Total price: 800.00
-
