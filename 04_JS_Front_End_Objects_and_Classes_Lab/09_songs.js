@@ -16,16 +16,14 @@ function solve(inputArray) {
     const numberOfSongs = inputArray[0];
     const typeList = inputArray[inputArray.length - 1];
     const songsArray = inputArray.slice(1, inputArray.length - 1);
-    let resultSongs = [];
 
     for (const element of songsArray) {
         let [list, name, time] = element.split('_');
         let song = new Song(list, name, time);
-        if (song.list === typeList || typeList ==='all') {
+        if (song.list === typeList || typeList === 'all') {
             console.log(song.name);
         }
     }
-
 }
 
 // solve([3,
