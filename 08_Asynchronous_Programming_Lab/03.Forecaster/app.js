@@ -60,8 +60,8 @@ function attachEvents() {
         const conditionSymbol = weatherSymbols[condition];
         const locationName = todayForecastObj.name;
         const lowTemp = todayForecastObj.forecast.low;
-    const highTemp = todayForecastObj.forecast.high;
-    const temperature = `${lowTemp}${weatherDegreesSymbol}/${highTemp}${weatherDegreesSymbol}`;
+        const highTemp = todayForecastObj.forecast.high;
+        const temperature = `${lowTemp}${weatherDegreesSymbol}/${highTemp}${weatherDegreesSymbol}`;
 
 
         const todayForecastElement = document.createElement('div');
