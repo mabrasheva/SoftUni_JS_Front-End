@@ -5,14 +5,13 @@ function attachEvents() {
     const getWeatherButton = document.getElementById('submit');
     const forecastElement = document.getElementById('forecast');
 
-
     const weatherSymbols = {
         'Sunny': '&#x2600', // ☀
         'Partly sunny': '&#x26C5', // ⛅
         'Overcast': '&#x2601', // ☁
         'Rain': '&#x2614', // ☂
     }
-    const weatherDegreesSymbol = '&#176'   // °
+    const weatherDegreesSymbol = '&#176' // °
 
     getWeatherButton.addEventListener('click', displayForecast);
 
@@ -41,7 +40,6 @@ function attachEvents() {
     };
 
     async function getUpcomingForecast(locationCode) {
-
         return fetch(`${baseUrl}/upcoming/${locationCode}`)
             .then(response => {
                 return response.json()
@@ -62,7 +60,6 @@ function attachEvents() {
         const lowTemp = todayForecastObj.forecast.low;
         const highTemp = todayForecastObj.forecast.high;
         const temperature = `${lowTemp}${weatherDegreesSymbol}/${highTemp}${weatherDegreesSymbol}`;
-
 
         const todayForecastElement = document.createElement('div');
         todayForecastElement.classList.add('forecasts');
@@ -121,13 +118,10 @@ function attachEvents() {
             </div>`;
 
         try {
-
             const locationName = inputLocationNameElement.value;
-
             const locationCode = await getLocationCode(locationName);
             const todayForecastObj = await getTodayForecast(locationCode);
             const upcomingForecastObj = await getUpcomingForecast(locationCode);
-
             displayTodayForecast(todayForecastObj);
             displayUpcomingForecast(upcomingForecastObj);
 
