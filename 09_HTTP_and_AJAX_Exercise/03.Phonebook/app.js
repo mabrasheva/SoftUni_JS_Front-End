@@ -3,7 +3,7 @@ function attachEvents() {
     const baseUrl = 'http://localhost:3030/jsonstore/phonebook';
     const loadButtonElement = document.getElementById('btnLoad');
     const createButtonElement = document.getElementById('btnCreate');
-    const phonbookUlElement = document.getElementById('phonebook');
+    const phonebookUlElement = document.getElementById('phonebook');
     const personInputElement = document.getElementById('person');
     const phoneInputElement = document.getElementById('phone');
 
@@ -20,7 +20,7 @@ function attachEvents() {
     }
 
     function loadPhonebook(phonebookObject) {
-        phonbookUlElement.innerHTML = '';
+        phonebookUlElement.innerHTML = '';
         Object.values(phonebookObject).forEach(({ person, phone, _id }) => {
 
             const liElement = document.createElement('li');
@@ -34,7 +34,7 @@ function attachEvents() {
             );
 
             liElement.appendChild(buttonElement);
-            phonbookUlElement.appendChild(liElement);
+            phonebookUlElement.appendChild(liElement);
         });
 
     }
