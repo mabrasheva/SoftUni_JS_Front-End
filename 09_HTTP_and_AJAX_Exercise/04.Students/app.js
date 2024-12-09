@@ -11,7 +11,8 @@ function attachEvents() {
 
         students = Object.values(studentsObject).forEach(({ firstName, lastName, facultyNumber, grade }) => {
             const trElement = document.createElement('tr');
-            [firstName, lastName, facultyNumber, grade.toFixed(2)].forEach(value => {
+            const formattedGrade = parseFloat(grade).toFixed(2);
+            [firstName, lastName, facultyNumber, formattedGrade].forEach(value => {
                 const tdElement = document.createElement('td');
                 tdElement.textContent = value;
                 trElement.appendChild(tdElement);
