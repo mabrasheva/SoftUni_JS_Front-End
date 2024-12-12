@@ -1,8 +1,8 @@
 function superhero_alliance(input) {
-    const hero_number = Number(input.shift());
-    const heroesData = input.slice(0, hero_number)
+    const heroNumber = Number(input.shift());
+    const heroesData = input.slice(0, heroNumber)
         .map(hero => hero.split('-'));
-    let commands = input.slice(hero_number)
+    let commands = input.slice(heroNumber)
         .map(command => command.split(' * '));
 
     const heroes = heroesData.reduce((result, hero) => {
