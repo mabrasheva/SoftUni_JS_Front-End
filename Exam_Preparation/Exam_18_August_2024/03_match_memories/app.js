@@ -146,5 +146,45 @@ function addMatchHandler() {
     clearInputs();
 }
 
+/*
+async function addMatchHandler() {
+
+    const host = hostInputElement.value;
+    const score = scoreInputElement.value;
+    const guest = guestInputElement.value;
+
+    if (!host || !score || !guest) {
+        return
+    }
+
+    data = {
+        host,
+        score,
+        guest,
+    };
+
+    return fetch(baseUrl,
+        {
+            method: 'POST',
+            headers: { 'Content-type': 'application/json' },
+            body: JSON.stringify(data),
+        }
+    )
+        .then(response => {
+            if (!response.ok) {
+                throw Error(response.message);
+            };
+            return response.json();
+        })
+        .then(() => {
+            loadMatchesHandler();
+            clearInputs();
+        })
+        .catch(reason => {
+            console.log(reason);
+        })
+}
+*/
+
 loadMatchesButton.addEventListener('click', loadMatchesHandler);
 addMatchButton.addEventListener('click', addMatchHandler)
