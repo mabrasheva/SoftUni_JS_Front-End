@@ -52,7 +52,6 @@ function scienceExperimentation(input) {
                 chemicals[chemicalName].quantity = 500;
 
                 console.log(`${chemicalName} quantity increased by ${addedQuantity} units, reaching maximum capacity of 500 units!`);
-                
             }
             return;
         }
