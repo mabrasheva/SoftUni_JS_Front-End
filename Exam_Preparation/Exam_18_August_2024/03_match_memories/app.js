@@ -111,48 +111,50 @@ async function loadMatchesHandler() {
         });
 }
 
-function addMatchHandler() {
-    const host = hostInputElement.value;
-    const score = scoreInputElement.value;
-    const guest = guestInputElement.value;
+// function addMatchHandler() {
+//     const host = hostInputElement.value;
+//     const score = scoreInputElement.value;
+//     const guest = guestInputElement.value;
 
-    if (!host || !score || !guest) {
-        return
-    }
+//     if (!host || !score || !guest) {
+//         return
+//     }
 
-    data = {
-        host,
-        score,
-        guest,
-    };
+//     data = {
+//         host,
+//         score,
+//         guest,
+//     };
 
-    fetch(baseUrl,
-        {
-            method: 'POST',
-            headers: { 'Content-type': 'application/json' },
-            body: JSON.stringify(data),
-        }
-    )
-        .then(response => {
-            if (!response.ok) {
-                throw Error(response.message);
-            };
-        })
-        .then(loadMatchesHandler)
-        .catch(reason => {
-            console.log(reason);
-        })
+//     fetch(baseUrl,
+//         {
+//             method: 'POST',
+//             headers: { 'Content-type': 'application/json' },
+//             body: JSON.stringify(data),
+//         }
+//     )
+//         .then(response => {
+//             if (!response.ok) {
+//                 throw Error(response.message);
+//             };
+//         })
+//         .then(loadMatchesHandler)
+//         .catch(reason => {
+//             console.log(reason);
+//         })
 
-    clearInputs();
-}
+//     clearInputs();
+// }
 
-/*
+
 async function addMatchHandler() {
 
     const host = hostInputElement.value;
     const score = scoreInputElement.value;
     const guest = guestInputElement.value;
 
+    clearInputs();
+    
     if (!host || !score || !guest) {
         return
     }
@@ -178,13 +180,13 @@ async function addMatchHandler() {
         })
         .then(() => {
             loadMatchesHandler();
-            clearInputs();
+            
         })
         .catch(reason => {
             console.log(reason);
         })
 }
-*/
+
 
 loadMatchesButton.addEventListener('click', loadMatchesHandler);
 addMatchButton.addEventListener('click', addMatchHandler)
