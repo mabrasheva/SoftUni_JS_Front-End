@@ -154,7 +154,7 @@ async function addMatchHandler() {
     const guest = guestInputElement.value;
 
     clearInputs();
-    
+
     if (!host || !score || !guest) {
         return
     }
@@ -180,7 +180,7 @@ async function addMatchHandler() {
         })
         .then(() => {
             loadMatchesHandler();
-            
+
         })
         .catch(reason => {
             console.log(reason);
